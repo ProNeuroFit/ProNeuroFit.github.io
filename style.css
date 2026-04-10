@@ -5,7 +5,6 @@
   --back: #595858;
 }
 
-
 * {
   margin: 0;
   padding: 0;
@@ -598,7 +597,7 @@ ul {
 
   .site-header {
     width: calc(100% - 30px);
-    margin: 15px auto 0;
+    margin: 30px auto 0;
     top: 15px;
     border-radius: 30px;
   }
@@ -710,7 +709,7 @@ ul {
   }
 
   .hero-title {
-    font-size: 34px;
+    font-size: 24px;
   }
 
   .hero-text {
@@ -952,7 +951,7 @@ ul {
 
 @media (max-width: 991px) {
   .section-head {
-    margin-bottom: 20px;
+    margin-bottom: 0;
   }
 
   .about-layout {
@@ -974,7 +973,7 @@ ul {
     gap: 30px;
   }
   .section-title {
-    font-size: 26px;
+    font-size: 22px;
   }
 }
 
@@ -1028,7 +1027,7 @@ ul {
   }
 
   .about-tech-title {
-    font-size: 26px;
+    font-size: 19px;
   }
 }
 
@@ -1391,52 +1390,6 @@ ul {
   margin-top: 30px;
   display: flex;
   justify-content: center;
-}
-
-.audience-marquee {
-  position: relative;
-  z-index: 1;
-  width: 100vw;
-  margin-top: 60px;
-  margin-left: calc(50% - 50vw);
-  margin-right: calc(50% - 50vw);
-  overflow: hidden;
-  border-top: 1px solid rgba(64, 208, 119, 0.2);
-  border-bottom: 1px solid rgba(64, 208, 119, 0.2);
-  background: rgba(255, 255, 255, 0.03);
-}
-
-.audience-marquee-track {
-  display: flex;
-  align-items: center;
-  gap: 30px;
-  width: max-content;
-  padding: 15px 0;
-  animation: audienceMarquee 28s linear infinite;
-}
-
-.audience-marquee-track span {
-  font-family: "Roboto", sans-serif;
-  font-size: 28px;
-  line-height: 1;
-  text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.92);
-  white-space: nowrap;
-}
-
-.audience-marquee-track span::after {
-  content: "•";
-  margin-left: 30px;
-  color: var(--accent);
-}
-
-@keyframes audienceMarquee {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(-50%);
-  }
 }
 
 /* =========================
@@ -1871,6 +1824,10 @@ ul {
   }
 }
 
+.mb-0 {
+  margin-bottom: 0;
+}
+
 @media (max-width: 576px) {
   .program-wrap {
     overflow-x: auto;
@@ -1879,6 +1836,7 @@ ul {
     -webkit-overflow-scrolling: touch;
     scroll-behavior: smooth;
     padding-bottom: 15px;
+    margin-top: 30px;
   }
 
   .program-wrap::-webkit-scrollbar {
@@ -2710,19 +2668,31 @@ ul {
   .contact-premium-card {
     padding: 15px;
     gap: 15px;
+    min-height: 100px;
+  }
+  .contact-premium-top {
+    margin-top: 30px;
   }
 
   .contact-premium-price-label {
     text-align: center;
   }
 
+  .contact-premium-links {
+    flex-direction: row;
+  }
+
+  .contact-premium-link span {
+    display: none;
+  }
+
   .contact-premium-price-default {
-    font-size: 34px;
+    font-size: 24px;
     text-align: center;
   }
 
   .contact-premium-price-accent {
-    font-size: 52px;
+    font-size: 24px;
     text-align: center;
   }
 
@@ -2769,6 +2739,18 @@ ul {
   .contact-premium-small-btn,
   .contact-premium-cta .btn {
     width: 100%;
+  }
+  .contact-premium-link {
+    padding: 15px;
+    width: 60px;
+    min-width: 60px;
+    min-height: 60px;
+    height: 60px;
+    gap: 0;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 /* =========================
