@@ -1291,7 +1291,7 @@ ul {
       rgba(255, 255, 255, 0.02) 0%,
       rgba(0, 0, 0, 0.34) 100%
     ),
-    url("images/11.jpg") center center / cover no-repeat;
+    url("images/11.JPG") center center / cover no-repeat;
 }
 
 .audience-card:nth-child(2) {
@@ -1951,13 +1951,11 @@ ul {
 .section-module-featured {
   position: relative;
   overflow: hidden;
-  background:
-    linear-gradient(
-      180deg,
-      rgba(47, 46, 46, 0.9) 0%,
-      rgba(34, 34, 34, 0.95) 100%
-    ),
-    url("images/module-1-bg.jpg") center center / cover no-repeat;
+  background: linear-gradient(
+    180deg,
+    rgba(47, 46, 46, 0.9) 0%,
+    rgba(34, 34, 34, 0.95) 100%
+  );
 }
 
 .section-module-featured::before {
