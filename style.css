@@ -5,7 +5,6 @@
   --back: #595858;
 }
 
-
 * {
   margin: 0;
   padding: 0;
@@ -2861,4 +2860,46 @@ ul {
   .section-final-cta {
     min-height: max-content;
   }
+}
+
+/* =========================
+   HOTEL CARD BG
+========================= */
+
+.contact-premium-card-hotel {
+  position: relative;
+  overflow: hidden;
+}
+
+/* фон */
+
+.contact-premium-card-bg {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.95) 100%),
+    url("images/hotel.jpg") center center / cover no-repeat;
+  z-index: 0;
+}
+
+.contact-premium-card-inner {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.contact-premium-card-hotel .contact-premium-card-title,
+.contact-premium-card-hotel .contact-premium-location {
+  color: #fff;
+}
+
+.contact-premium-card-hotel .btn-secondary {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.4);
+}
+
+.contact-premium-card-hotel .btn-secondary:hover {
+  background: rgba(255, 255, 255, 0.2);
 }
