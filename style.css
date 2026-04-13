@@ -5,7 +5,6 @@
   --back: #595858;
 }
 
-
 * {
   margin: 0;
   padding: 0;
@@ -2917,4 +2916,11 @@ ul {
   color: var(--main);
   text-transform: uppercase;
   letter-spacing: 0.05em;
+}
+
+@media (max-width: 576px) {
+  .price-label {
+    text-align: center;
+    font-size: 16px;
+  }
 }
