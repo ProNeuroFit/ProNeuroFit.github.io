@@ -2920,6 +2920,7 @@ ul {
 
 .price-label strong {
   font-size: 29px;
+  display: inline-block;
   font-weight: bold;
 }
 
