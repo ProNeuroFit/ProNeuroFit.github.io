@@ -2903,3 +2903,17 @@ ul {
 .contact-premium-card-hotel .btn-secondary:hover {
   background: rgba(255, 255, 255, 0.2);
 }
+
+.price-simple {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.price-label {
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--main);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
