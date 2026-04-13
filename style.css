@@ -2918,6 +2918,11 @@ ul {
   letter-spacing: 0.05em;
 }
 
+.price-label strong {
+  font-size: 29px;
+  font-weight: bold;
+}
+
 @media (max-width: 576px) {
   .price-label {
     text-align: center;
