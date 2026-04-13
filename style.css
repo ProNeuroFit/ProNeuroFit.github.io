@@ -2928,4 +2928,7 @@ ul {
     text-align: center;
     font-size: 16px;
   }
+  .price-label strong {
+    font-size: 29px;
+  }
 }
